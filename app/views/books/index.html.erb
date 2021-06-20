@@ -11,6 +11,10 @@
         <th></th>
       </tr>
     </thead>
+    <% @books.each do |book| %>
+      <p><%= book.title %></p>
+      <span><%= book.body %></span>
+    <% end %>
   </table>
   
   <h2>New book</h2>
