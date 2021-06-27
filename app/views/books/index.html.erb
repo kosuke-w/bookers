@@ -27,16 +27,6 @@
 
   <h2>New book</h2>
   <%= form_with model: @books, url:"/books", local:true do |f| %>
-    <% if @books.errors.any? %>
-      <div>
-        <ul style="color: red">
-          <% @books.errors.full_messages.each do |messeage| %>
-            <li><%= message %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-
   <div>
     <label>title</label>
     <%= f.text_field :title %>
